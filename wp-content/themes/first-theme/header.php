@@ -16,7 +16,7 @@
         <!-- end top -->
         <div class="inner-header">
             <a href="<?php echo get_home_url(); ?>">
-                <img src="<?php get_template_directory_uri();?>/images/logo.png" id="logo" alt="logo" />
+                <img src="<?php get_template_directory_uri();?>/images/logo.png" id="logo" alt="logo"></img>
             </a>
             <nav id="site-navigation" class="main-navigation">
                 <button class="nav-button">Toggle Navigation</button>
