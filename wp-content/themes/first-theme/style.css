@@ -13,38 +13,133 @@ Description: First WordPress Theme
 body {
   background: #b1b6a6;
 }
+
+.home #hero {
+  background-image: url(https://ofr.cgc.mybluehost.me/summer-site-1/wp-content/uploads/road.jpg);
+  background-attachment: fixed;
+  background-size: 100%;
+  background-position: 0 150px;
+  min-height: 600px;
+  max-width: 100%;
+  background-repeat: no-repeat;
+}
+
+.home #hero img {
+  display: none;
+}
+.inner-page #hero img {
+  display: none;
+}
+.inner-page #hero {
+  background-image: url(https://ofr.cgc.mybluehost.me/summer-site-1/wp-content/uploads/night.jpg);
+  background-attachment: fixed;
+  background-size: 100%;
+  background-position: 0 150px;
+  max-width: 100%;
+  min-height: 400px;
+  background-repeat: no-repeat;
+}
 .home .size-post-thumbnail {
   width: 100%;
   height: 100%;
 }
 header {
-  padding: 20px;
-  background: #386641;
+  height: 150px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
+  background: #2e2836;
 }
 .inner-header {
   max-width: 1100px;
   margin: 0 auto;
 }
-#wrapper {
+.wrapper {
+  background: #386641;
   clear: both;
   max-width: 1100px;
-  margin: 0 auto;
+  margin: 20px auto 20px auto;
+}
+#wrapper h3 {
+  color: #2e2836;
+}
+.next-previous {
+  color: #2e2836;
+}
+.next-previous a {
+  color: #6a2e35;
+}
+main p {
+  color: #2e2836;
 }
 main {
   float: left;
   width: 63%;
-  margin-top: 20px;
+  background: none;
+  /* margin-top: 20px; */
 }
 aside {
   float: right;
   width: 34%;
-  height: 200px;
+
+  text-align: center;
+  /* margin-top: 20px; */
+}
+.full-width {
+  clear: both;
+  margin-top: 50px;
+  background: #6a2e35;
+}
+.third {
+  width: 31.91%;
+  float: left;
+  margin-right: 2.12%;
+}
+
+.third:last-of-type {
+  margin-right: 0;
+}
+#block-8 {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: center;
+}
+#block-6 {
+  background: #07001b;
+  color: #b1b6a6;
+}
+#custom_html-2 {
   background: #6a2e35;
   margin-top: 20px;
+  padding: 3% 3% 3% 3%;
+}
+#nav_menu-2 {
+  background: #386641;
+  margin-top: -10px;
+  padding: 1% 3% 3% 3%;
+}
+.menu-our-tours-menu-container {
+  margin-left: 10px;
+  margin-bottom: 15px;
+}
+.menu-our-tours-menu-container li {
+  line-height: 1.3;
+  list-style-type: none;
+  font-weight: bold;
+}
+#block-10 {
+  margin-top: 20px;
+  border: 2px solid #386641;
+  color: #2e2836;
 }
 footer {
   clear: both;
-  height: 200px;
+  background: #b1b6a6;
+  padding-top: 20px;
+}
+footer .wrapper {
   background: #b1b6a6;
 }
 
@@ -70,6 +165,8 @@ article span {
 }
 #logo {
   float: left;
+  height: 130px;
+  width: auto;
   margin: 20px 0;
 }
 .menu-my-primary-menu-container {
@@ -85,6 +182,9 @@ article span {
 }
 .main-navigation a {
   text-decoration: none;
+
+  display: block;
+  padding: 3px;
 }
 .main-navigation li:hover .sub-menu {
   display: block;
@@ -92,17 +192,19 @@ article span {
   top: 17px;
   left: 0;
   padding: 6px;
+  background-color: #6a2e35;
 }
+.main-navigation li:hover .sub-menu li {
+  margin-left: 0;
+  width: 115px;
+}
+
 .block {
   display: block;
 }
 
 .sub-menu {
   display: none;
-}
-
-.main-navigation li:hover .sub-menu li {
-  margin-left: 0;
 }
 
 p + .block {
@@ -114,8 +216,13 @@ h1 {
   color: #053c5e;
   margin-bottom: 10px;
 }
+h2 a {
+  font-size: 1.4em;
+  color: #053c5e;
+  margin-bottom: 10px;
+}
 a {
-  color: #554868;
+  color: #b1b6a6;
 }
 h2 {
   font-size: 1.88em;
@@ -123,7 +230,14 @@ h2 {
   margin-bottom: 10px;
 }
 h2 a {
-  color: #2e2836;
+  color: #053c5e;
+}
+.posts p {
+  color: #6a2e35;
+}
+
+.meta span {
+  color: #386641;
 }
 h3 {
   font-size: 1.5em;
@@ -132,6 +246,10 @@ h3 {
 }
 .thumbnail {
   margin-bottom: 10px;
+}
+.thumbnail a {
+  width: 100%;
+  height: auto;
 }
 
 /* reply form*/
@@ -163,6 +281,14 @@ h3 {
 #searchform {
   float: right;
 }
+#search-error {
+  max-width: 100%;
+  margin: 150px auto 20px auto;
+}
+#search-error img {
+  width: 100%;
+  max-height: 400px;
+}
 .screen-reader-text {
   display: none;
 }
@@ -180,10 +306,39 @@ h3 {
 .nav-button {
   display: none;
 } /* hide the navigation button by default */
+@media screen and (max-width: 1430px) {
+  body {
+  }
+  .home #hero {
+    background-image: none;
+    background-size: 100%;
+    margin-top: 150px;
+    max-width: 100%;
+    min-height: auto;
+  }
 
+  .home #hero img {
+    display: block;
+  }
+
+  .inner-page #hero {
+    background-image: none;
+    background-size: 100%;
+    margin-top: 150px;
+    max-width: 100%;
+    min-height: auto;
+  }
+  .inner-page #hero {
+    display: block;
+  }
+}
 @media only screen and (max-width: 700px) {
   /* Navigation Button
 	-------------------------------------------------------- */
+
+  .main-navigation li:hover .sub-menu li {
+    width: 115px;
+  }
 
   .nav-button {
     display: block;

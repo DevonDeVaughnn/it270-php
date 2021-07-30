@@ -10,15 +10,19 @@
     <?php wp_head();  ?>
 </head>
 
-<body <?php body_class();?>>
+<body <?php body_class(! is_front_page() ? "inner-page":"");?>>
     <header>
-        <div id="top"><?php get_search_form();?></div>
+        <div id="top"><?php get_search_form();?>
+            <a href="<?php echo get_home_url(); ?>">
+                <img src="<?php echo get_template_directory_uri();?>/images/logo.png" id="logo" alt="Logo">
+            </a>
+        </div>
         <!-- end top -->
         <div class="inner-header">
-            <a href="<?php echo get_home_url(); ?>"><img src="<?php get_template_directory_uri();?>/images/logo.png"
-                    id="logo" alt="logo">
 
-            </a>
+
+
+
             <nav id="site-navigation" class="main-navigation">
                 <button class="nav-button">Toggle Navigation</button>
                 <?php

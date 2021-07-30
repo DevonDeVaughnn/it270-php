@@ -1,14 +1,14 @@
 <?php get_header();
 /* Template Name: Front Page*/
  ?>
-
-<div id="wrapper">
+<div id="hero"><img src="<?php echo get_template_directory_uri();?>/../../uploads/road.jpg" alt="banner" /> </div>
+<!-- end hero -->
+<div class="wrapper">
     <?php if(has_post_thumbnail()) : ?>
     <?php the_post_thumbnail(); ?>
     <?php endif;?>
 
     <?php while(have_posts()) : the_post() ;?>
-    <h2><?php the_title() ; ?></h2>
     <?php the_content() ; ?>
     <?php endwhile; ?>
 

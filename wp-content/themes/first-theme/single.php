@@ -1,6 +1,7 @@
 <?php get_header(); ?>
+<div id="hero"><img src="<?php echo get_template_directory_uri();?>/../../uploads/road.jpg" alt="banner" /> </div>
 
-<div id="wrapper">
+<div class="wrapper">
     <main>
         <!--if we have posts... show me the posts, if not, we don't have them-->
 
@@ -21,9 +22,12 @@
         <?php echo wpautop('Sorry, no posts were found!'); ?>
 
         <?php endif; ?>
+        <span class="next-previous"><?php (previous_post_link()) ? "%link":"";?> &nbsp;
+            &nbsp;<?php (next_post_link())?"%link":"";?>
+        </span>
         <?php comments_template()?>
     </main>
-    <aside></aside>
+    <?php get_sidebar() ?>
 
 
 </div>

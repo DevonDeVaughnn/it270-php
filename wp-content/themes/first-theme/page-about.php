@@ -1,8 +1,9 @@
 <?php get_header();
-/* Template Name: Tours Page*/
+/* Template Name: About Page*/
  ?>
 
 <div id="hero">
+
     <img src="<?php echo get_template_directory_uri();?>/../../uploads/wpwood.jpg" alt="banner" />
 </div>
 <!-- end hero -->
@@ -18,14 +19,10 @@
     </main>
 
     <aside id="secondary" class="widget-area">
-        <?php dynamic_sidebar('sidebar-tours');?>
+        <?php dynamic_sidebar('sidebar-about');?>
     </aside>
+
+
 </div>
-<div class="full-width"><?php dynamic_sidebar('sidebar-buy');?></div>
-<!-- end div -->
-
-
-
-
 <?php get_footer(); ?>
 <!--end wrapper-->
